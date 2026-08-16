@@ -42,3 +42,31 @@ For each sub-problem, apply CT skills:
 Step 4: Draw a flowchart or write a pseudocode for the identified sub-problem
 
 Sub-problem 2 pseudocode:
+
+(this code only works if there is one item [itemname] on the menu)
+DECLARE itemname : STRING
+DECLARE order : STRING
+DECLARE menuitem : STRING
+DECLARE itemprice : INTEGER
+DECLARE total : INTEGER
+
+itemname = <item>
+itemprice = <price>
+
+total = 0
+order = yes
+
+WHILE order = yes
+  OUTPUT "Enter the name of the item: "
+  INPUT menuitem
+  IF menuitem = itemname THEN
+    total = total + itemprice
+    OUTPUT "Successfully added ", menuitem, " to your order!"
+  ELSE
+    OUTPUT "Sorry, item not recognized."
+  ENDIF
+  OUTPUT "Add an item to your order? (yes/no): "
+  INPUT order
+ENDWHILE
+
+OUTPUT "Your total is ₱", total
