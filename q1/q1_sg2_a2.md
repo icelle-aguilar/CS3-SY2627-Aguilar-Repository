@@ -1,9 +1,9 @@
 Annex C
 Code Quality Assessment Worksheet
 
-Section: Pinatubo                                         Score:____________
+Section: Pinatubo                                         Score: ______________
 
-C# / Name: #16 Umayan, #17 Aguilar, #19 Atencio Date:     August 16, 2026
+C# / Name: #16 Umayan, #17 Aguilar, #19 Atencio           Date: August 16, 2026
 
 
 The problem: Finding the highest (Maximum) number from a given list of numbers.
@@ -65,13 +65,12 @@ Checklist to guide your answer:
 |                                                    |                                                    |
 | [ ] Would adding new steps break the code easily?  | [/] Would adding new steps break the code easily?  |
 |                                                    |                                                    |
-| [/]  Is there less chance of errors when updating? | [ ]  Is there less chance of errors when updating? |
+| [/] Is there less chance of errors when updating?  | [ ] Is there less chance of errors when updating?  |
 
 4. Testability
 Which algorithm is easier to test with different inputs? Why?
 
-Algorithm 1 is easier to test with different inputs because it's simple structure means that you can ... patuloy po thx
-
+Algorithm 1 is easier to test with different inputs because it's simple structure means that you can easily test with different kinds of small datasets and predict possible ouputs because of the simple logic used.
 Checklist to guide your answer:
 | PseudoCode 1                                            | Pseudocode 2                                            |
 | ------------------------------------------------------- | ------------------------------------------------------- |
@@ -79,7 +78,7 @@ Checklist to guide your answer:
 |                                                         |                                                         |
 | [/] Does the algorithm have fewer conditions to check?  | [ ] Does the algorithm have fewer conditions to check?  |
 |                                                         |                                                         |
-| [/]  Is the output predictable and clear?               | [ ]  Is the output predictable and clear?               |
+| [/] Is the output predictable and clear?                | [ ] Is the output predictable and clear?                |
 
 5. Security
 Imagine the input list comes from a user. What should the algorithm check to avoid errors or misuse?
