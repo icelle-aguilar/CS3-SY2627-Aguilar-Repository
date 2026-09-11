@@ -1,0 +1,21 @@
+# COMPOSITION
+class Nucleus:
+    def __init__(self):
+        print("Nucleus created")
+
+class Mitochondria:
+    def __init__(self):
+        print("Mitochondria created")
+    def powerTheCell(self):
+        print("Mitochondria is providing energy")
+
+class Cell:
+    def __init__(self):
+        print("Cell created")
+        self.nucleus=Nucleus()
+        self.mitochondria=Mitochondria()
+    def exist(self):
+        print("Cell is existing")
+        self.mitochondria.powerTheCell()
+
+cellAtWork=Cell()
