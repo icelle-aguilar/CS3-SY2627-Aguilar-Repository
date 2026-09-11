@@ -1,13 +1,19 @@
-# COMPOSITION
+#COMPOSITION
+
+# CLASSES
 class Nucleus:
     def __init__(self):
         print("Nucleus created")
+    def __del__(self):
+        print("Nucleus is gone")
 
 class Mitochondria:
     def __init__(self):
         print("Mitochondria created")
     def powerTheCell(self):
         print("Mitochondria is providing energy")
+    def __del__(self):
+        print("Mitochondria is gone")
 
 class Cell:
     def __init__(self):
@@ -17,5 +23,12 @@ class Cell:
     def exist(self):
         print("Cell is existing")
         self.mitochondria.powerTheCell()
+    def __del__(self):
+        del self.nucleus
+        del self.mitochondria
+        print("Cell is gone")
 
+# OBJECTS
 cellAtWork=Cell()
+cellAtWork.exist()
+del cellAtWork
