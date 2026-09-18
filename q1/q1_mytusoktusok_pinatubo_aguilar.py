@@ -6,7 +6,7 @@ class Tusoktusok:
     def dip(self,sauce):
         self.sauce.append(sauce)
     def eat(self):
-        print("I ate",self.name,"with",end=" ")
+        print("I ate",end=" ")
         [print(s.name,end=" ") for s in self.sauce]
         print("and it tastes",end=" ")
         [print(s.taste,end=" ") for s in self.sauce]
