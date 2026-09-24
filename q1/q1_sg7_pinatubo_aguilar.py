@@ -14,4 +14,5 @@ class Tray:
 
 tray1 = Tray()
 
-print(f"You have {len(tray1.beakers)} beakers.")
+print(f"There are {len(tray1.beakers)} beakers.")
+del my_tray
