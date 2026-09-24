@@ -11,3 +11,7 @@ class Beaker(Glassware):
 class Tray:
     def __init__(self):
         self.beakers = [Beaker() for _ in range(5)]
+
+tray1 = Tray()
+
+print(f"You have {len(tray1.beakers)} beakers.")
