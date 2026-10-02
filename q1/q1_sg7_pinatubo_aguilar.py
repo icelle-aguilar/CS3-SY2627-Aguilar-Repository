@@ -4,7 +4,7 @@ class Glassware:
 
 
 class Beaker(Glassware):
-    def __init__(self, kindofglassware):
+    def __init__(self, kindofglassware="Beaker"):
         super().__init__(kindofglassware)
 
 
@@ -15,4 +15,4 @@ class Tray:
 tray1 = Tray()
 
 print(f"There are {len(tray1.beakers)} beakers.")
-del my_tray
+del tray1
