@@ -32,8 +32,8 @@ class Book(Publication):
         else:
             self.__number_of_pages=number_pages
     def display_info(self):
-				super().display_info()
-				print(f"Number of pages: {self.__number_of_pages}")
+        super().display_info()
+        print(f"Number of pages: {self.__number_of_pages}")
 
 class Magazine(Publication):
     __issue_number:int
@@ -51,8 +51,8 @@ class Magazine(Publication):
         else:
             self.__issue_number=issue_number
     def display_info(self):
-				super().display_info()
-				print(f"Issue number: {self.__issue_number}")
+        super().display_info()
+        print(f"Issue number: {self.__issue_number}")
 
 pub1 = Publication("Journal of Experimental Psychology", "Ratcliff, R. & Van Dongen, H.")
 book1 = Book("The Hobbit", "J.R.R. Tolkien", 310)
