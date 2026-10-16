@@ -26,9 +26,7 @@ student1.set_age(-16)
 print(f"Student age: {student1.get_age()}")
 
 student1.set_age(16)
-print(f"Student age: {student1.get_age()}")
-
-WILL EDIT IN A BIT'''
+print(f"Student age: {student1.get_age()}")'''
 
 class Student:
     __name:str
