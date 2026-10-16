@@ -50,7 +50,7 @@ class Magazine(Publication):
             print(f"Issue number must be positive.")
         else:
             self.__issue_number=issue_number
-		def display_info(self):
+	def display_info(self):
 				super().display_info()
 				print(f"Issue number: {self.__issue_number}")
 
