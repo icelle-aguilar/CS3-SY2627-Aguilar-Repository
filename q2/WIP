@@ -2,7 +2,7 @@ class Publication:
     __title:str
     __author:str
     
-    def __init__(self,title,auhor):
+    def __init__(self,title,author):
         self.__title=title
         self.__author=author
     def get_title(self):
@@ -11,7 +11,7 @@ class Publication:
         return self.__author
     def set_title(self,title):
         self.__title=title
-    def set_author(self,author)):
+    def set_author(self,author):
         self.__author=author
     def display_info(self):
         print(f"Title: {self.__title}\nAuthor: {self.__author}")
@@ -24,20 +24,32 @@ class Book(Publication):
         
         self.__number_of_pages=0
         self.set_number_of_pages(number_pages)
-    
     def get_number_of_pages(self):
         return self.__number_of_pages
-
     def set_number_of_pages(self,number_pages):
-        if number of pages<=0:
+        if number_pages<=0:
             print(f"The number of pages must be positive")
         else:
             self.__number_of_pages=number_pages
+		def display_info(self):
+				super().display_info()
+				print(f"Number of pages: {self.__number_of_pages}")
+
 class Magazine(Publication):
     __issue_number:int
     
     def __init__(self,title,author,issue_number):
-    
+        super().__init__(title,author)
+        
+        self.__issue_number=0
+        self.set_issue_number(issue_number)
     def get_issue_number(self):
-
+        return self.__issue_number
     def set_issue_number(self,issue_number):
+        if issue_number<=0:
+            print(f"The issue number must be positive")
+        else:
+            self.__issue_number=issue_number
+		def display_info(self):
+				super().display_info()
+				print(f"Issue number: {self.__issue_number}")
