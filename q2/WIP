@@ -31,7 +31,7 @@ class Book(Publication):
             print(f"Number of pages must be positive.")
         else:
             self.__number_of_pages=number_pages
-		def display_info(self):
+	def display_info(self):
 				super().display_info()
 				print(f"Number of pages: {self.__number_of_pages}")
 
