@@ -34,8 +34,8 @@ class PhilHealthPatient(Patient):
 
 
 regular_patient = Patient("Juan Dela Cruz", 15000)
-senior_patient = Patient("Maria Santos", 15000)
-philhealth_patient = Patient("Pedro Reyes", 15000)
+senior_patient = SeniorPatient("Maria Santos", 15000)
+philhealth_patient = PhilHealthPatient("Pedro Reyes", 15000)
 
 patients = [regular_patient,senior_patient,philhealth_patient]
 print(f"Hospital Billing System\n-----------------------")
