@@ -31,6 +31,8 @@ class PhilHealthPatient(Patient):
     def calculate_bill(self):
         return self.bill_amount * 0.85
 
+
+
 regular_patient = Patient("Juan Dela Cruz", 15000)
 senior_patient = Patient("Maria Santos", 15000)
 philhealth_patient = Patient("Pedro Reyes", 15000)
