@@ -7,7 +7,7 @@ class Bill:
     def pay(self,payment):
         self.amount-=payment.amount
         print(f"Payment of ₱{payment.amount} made using {payment.mode}")
-        print(f"Balance: {self.amount}")
+        print(f"Balance: {self.amount}\n")
     
 class Payment:
     amount=0
